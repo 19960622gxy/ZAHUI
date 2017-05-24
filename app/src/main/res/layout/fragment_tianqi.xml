@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_tiankong"
+    >
+    <!--android:background="#A9A9A9"-->
+   <!--<ScrollView-->
+
+       <!--android:layout_width="match_parent"-->
+       <!--android:layout_height="wrap_content">-->
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+       <!--天气-->
+       <android.support.v7.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="8dp"
+           app:cardElevation="4dp">
+
+      <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:background="#ffffff">
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+              <TextView
+                  android:layout_width="20dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:id="@+id/now_location"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="xx"
+                  android:textColor="#989898"
+                  android:textSize="24sp"/>
+              <TextView
+                  android:layout_width="10dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:id="@+id/now_temp"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="0°"
+                  android:textColor="#989898"
+                  android:textSize="22sp"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+              <ImageView
+                  android:layout_gravity="center"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:src="@mipmap/tianqi_menu"/>
+          </LinearLayout>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="5dp" />
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+              <TextView
+                  android:layout_width="40dp"
+                  android:layout_height="match_parent" />
+              <TextView
+
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="今天"
+                  android:textColor="#333"
+                  android:textSize="24sp"/>
+              <TextView
+                  android:layout_width="10dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:id="@+id/now_month"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="x"
+                  android:textColor="#606060"
+                  android:textSize="22sp"/>
+              <TextView
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="/"
+                  android:textColor="#606060"
+                  android:textSize="22sp"/>
+              <TextView
+                  android:id="@+id/now_day"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="x"
+                  android:textColor="#606060"
+                  android:textSize="22sp"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+
+              <ImageView
+                  android:layout_gravity="center"
+                  android:id="@+id/now_image"
+                  android:layout_width="45dp"
+                  android:layout_height="45dp"
+                  android:src="@mipmap/ic_launcher"/>
+              <TextView
+                  android:layout_width="10dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:id="@+id/now_weather"
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="xx"
+                  android:textSize="22sp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+
+
+
+
+
+
+
+
+          </LinearLayout>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="5dp" />
+          <LinearLayout
+              android:id="@+id/ll_santaintianqi"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="50dp">
+              <TextView
+                  android:layout_width="40dp"
+                  android:layout_height="match_parent" />
+              <TextView
+                  android:layout_gravity="center"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="未来2天天气"
+                  android:textColor="#333"
+                  android:textSize="24sp"/>
+              <TextView
+                  android:layout_width="0dp"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"/>
+              <ImageView
+                  android:layout_gravity="center"
+                  android:layout_width="20dp"
+                  android:layout_height="20dp"
+                  android:src="@mipmap/ticket_choose_date"
+                  />
+              <TextView
+                  android:layout_width="15dp"
+                  android:layout_height="match_parent" />
+
+          </LinearLayout>
+      </LinearLayout>
+       </android.support.v7.widget.CardView>
+
+       <!--<android.support.v7.widget.CardView-->
+           <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--app:cardCornerRadius="8dp"-->
+        <!--app:cardElevation="4dp">-->
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+              />
+        <!--android:src="@mipmap/star"-->
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    </LinearLayout>
+
+       <!--生活指数-->
+
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--上三个-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/xiche"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="洗车指数"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/xiche"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="看你"
+                            android:textColor="#333"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@mipmap/fangshai"
+                        />
+                    <TextView
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="紫外线指数"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/fangshai"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="看你"
+                        android:textColor="#333"
+                        android:textSize="24sp"/>
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/lvyou"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="旅游指数"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/lvyou"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="看你"
+                            android:textColor="#333"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <!--下三个-->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/yifu"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="穿衣指数"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/yifu"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="看你"
+                            android:textColor="#333"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/ganmao"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="感冒指数"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/ganmao"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="看你"
+                            android:textColor="#333"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="4dp"
+                    >
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@mipmap/yundong"
+                            />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运动指数"
+                            android:textSize="16sp"/>
+                        <TextView
+                            android:id="@+id/yundong"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="看你"
+                            android:textColor="#333"
+                            android:textSize="24sp"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="5dp"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--<android.support.v7.widget.CardView-->
+        <!--android:layout_marginTop="5dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:cardCornerRadius="8dp"-->
+        <!--app:cardElevation="4dp">-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+
+   <!--</ScrollView>-->
+
+</LinearLayout>

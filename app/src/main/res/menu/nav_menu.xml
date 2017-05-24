@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+     <!--允许用户选单个item-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_shoucang"
+            android:icon="@mipmap/shoucang"
+            android:title="收    藏" />
+        <!--<item-->
+            <!--android:id="@+id/nav_friends"-->
+            <!--android:icon="@drawable/friend"-->
+            <!--android:title="Friends" />-->
+        <!--<item-->
+            <!--android:id="@+id/nav_location"-->
+            <!--android:icon="@drawable/location"-->
+            <!--android:title="Location" />-->
+        <item
+            android:id="@+id/nav_sao"
+            android:icon="@mipmap/ic_discover_scan"
+            android:title="扫一扫" />
+        <item
+            android:id="@+id/nav_yao"
+            android:icon="@mipmap/ic_discover_shake"
+            android:title="摇一摇" />
+        <item
+            android:title="" />
+        <item
+            android:title="" />
+        <item
+            android:title="" />
+        <item
+            android:title="" />
+        <item
+            android:id="@+id/nav_back"
+            android:icon="@mipmap/backlogin"
+            android:title="退出登录" />
+
+
+
+    </group>
+</menu>
